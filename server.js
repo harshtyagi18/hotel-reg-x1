@@ -10,10 +10,10 @@ app.use(bodyParser.json());
 app.use(express.static('public'));
 
 const db = mysql.createPool({
-  host: 'localhost',
-  user: 'root',
-  password: '1234',
-  database: 'hotel_management'
+  host: 'your_host_name',
+  user: 'your_username',
+  password: 'your_password',
+  database: 'your_db'
 });
 
 app.get('/hotels', async (req, res) => {
